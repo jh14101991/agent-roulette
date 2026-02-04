@@ -1,0 +1,26 @@
+{
+  "name": "agent-roulette",
+  "version": "1.0.0",
+  "description": "Agents bet USDC on their own epistemological uncertainty",
+  "scripts": {
+    "balance": "node scripts/check-balance.js",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js --network baseSepolia",
+    "deploy:full": "npx hardhat run scripts/full-deploy.js --network baseSepolia",
+    "interact": "npx hardhat run scripts/interact.js --network baseSepolia",
+    "oracle": "node oracle/server.js",
+    "test": "npx hardhat test"
+  },
+  "keywords": ["agent", "gambling", "usdc", "hallucination", "hackathon"],
+  "author": "ClawdJames",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "hardhat": "^2.19.4"
+  }
+}
